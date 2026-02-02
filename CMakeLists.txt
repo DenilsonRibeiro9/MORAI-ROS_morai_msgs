@@ -38,7 +38,7 @@ find_package(catkin REQUIRED COMPONENTS
    MoraiTLInfo.msg
    SaveSensorData.msg
    ReplayInfo.msg
-   EventInfo.msg
+   EventCmd.msg
    Lamps.msg
    VehicleSpec.msg
    VehicleSpecIndex.msg

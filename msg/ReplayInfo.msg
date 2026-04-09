@@ -1,25 +1,21 @@
-# ReplayInfo
-# Replay data containing ego vehicle state and surrounding object information.
-# Topic: /ReplayInfo_topic
-
 Header header
 
-float64 ego_acc  # Accelerator pedal, range 0~1
-float64 ego_brake  # Brake pedal, range 0~1
-float64 ego_steer  # Front wheel angle [deg]
+float64 ego_acc
+float64 ego_brake
+float64 ego_steer
 
-geometry_msgs/Quaternion orientation  # Current orientation
+geometry_msgs/Quaternion orientation
 
-geometry_msgs/Vector3 linear_acceleration  # Current linear acceleration
+geometry_msgs/Vector3 linear_acceleration
 
-geometry_msgs/Vector3 angular_velocity  # Current angular velocity
+geometry_msgs/Vector3 angular_velocity
 
-int32 num_of_npcs  # Number of NPC vehicles
-int32 num_of_pedestrian  # Number of pedestrians
-int32 num_of_obstacle  # Number of static obstacles
+int32 num_of_npcs
+int32 num_of_pedestrian
+int32 num_of_obstacle
 
-ObjectStatus[] npc_list  # NPC vehicle information
+ObjectStatus[] npc_list 
 
-ObjectStatus[] pedestrian_list  # Pedestrian information
+ObjectStatus[] pedestrian_list
 
-ObjectStatus[] obstacle_list  # Obstacle information
+ObjectStatus[] obstacle_list 
